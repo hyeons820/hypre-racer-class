@@ -875,6 +875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135454897}
+  - component: {fileID: 1135454898}
   m_Layer: 0
   m_Name: Road
   m_TagString: Untagged
@@ -900,6 +901,18 @@ Transform:
   - {fileID: 655106295}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1135454898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135454896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16dbb830d8c7a7f4681714edab609831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1317633313
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317633314}
+  - component: {fileID: 1317633315}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -932,6 +946,18 @@ Transform:
   - {fileID: 1006957623}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1317633315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317633313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2560abe3ef06ad48b787cd522077c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
