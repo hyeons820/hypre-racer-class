@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 605237396}
   - component: {fileID: 605237395}
   m_Layer: 5
-  m_Name: 'Right Move Button '
+  m_Name: Right Move Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
