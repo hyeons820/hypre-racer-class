@@ -28,7 +28,7 @@ public class GameTestScript
         // Use yield to skip a frame.
         
         // 타임스케일 변경
-        Time.timeScale = 20;
+        Time.timeScale = 5;
         
         // 씬 로드하기
         SceneManager.LoadScene("Scenes/Game", LoadSceneMode.Single);
