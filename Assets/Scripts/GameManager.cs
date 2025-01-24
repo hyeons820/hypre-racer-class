@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     private List<GameObject> _activeRoads = new List<GameObject>();
     
     // 만들어지는 도로의 index
-    private int _roadIndex = 0;
+    private int _roadIndex;
     
     // 상태
     public enum State { Start, Play, End}
@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        // 게임 상태에 따라 동작
         switch (GameState)
         {
             case State.Start:
@@ -98,8 +99,11 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void StartGame()
+    private void StartGame()
     {
+        // _roadIndex 초기화
+        _roadIndex = 0;
+        
         // 도로 생성
         SpawnRoad(Vector3.zero);
             
@@ -121,7 +125,7 @@ public class GameManager : MonoBehaviour
         GameState = State.End;
         
         // 자동차 제거
-        Destroy(_carController);
+        Destroy(_carController.gameObject);
         
         // 도로 제거
         foreach (var activeRoad in _activeRoads)
@@ -189,9 +193,6 @@ public class GameManager : MonoBehaviour
             road = _roadPool.Dequeue();
             road.transform.position = position;
             road.SetActive(true);
-            
-            // 활성화 된 길을 움직이기 위해 List에 저장
-            _activeRoads.Add(road);
         }
         else
         {
